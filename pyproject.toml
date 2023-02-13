@@ -1,0 +1,33 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "discord_andshrew"
+version = "0.0.5"
+authors = [
+  { name="andshrew", email="7409326+andshrew@users.noreply.github.com" },
+]
+description = "A simple package for building, sending and queuing Discord webhook messages"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "requests>=2.2",
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[tool.hatch.build]
+exclude = [
+  ".devcontainer/",
+  ".github/",
+  "docs/",
+  ".gitignore",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/andshrew/Discord-Message-Python"
+"Bug Tracker" = "https://github.com/andshrew/Discord-Message-Python/issues"
