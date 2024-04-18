@@ -1,9 +1,10 @@
 name: Build and Publish Package to PyPI
 
 on:
-  release:
-    types:
-      - published
+  workflow_dispatch:
+    branches:
+      - main
+      - 'releases/**'
 
 jobs:
   deploy:

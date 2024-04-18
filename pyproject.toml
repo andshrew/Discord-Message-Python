@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "discord_andshrew"
-version = "0.0.5"
+version = "0.1.0"
 authors = [
   { name="andshrew", email="7409326+andshrew@users.noreply.github.com" },
 ]
@@ -12,7 +12,7 @@ description = "A simple package for building, sending and queuing Discord webhoo
 readme = "README.md"
 requires-python = ">=3.8"
 dependencies = [
-    "requests>=2.2",
+    "requests>=2.31",
 ]
 classifiers = [
     "Programming Language :: Python :: 3",
@@ -26,6 +26,10 @@ exclude = [
   ".github/",
   "docs/",
   ".gitignore",
+  "requirements.txt",
+  "dist/",
+  "data_dump/",
+  "app.py"
 ]
 
 [project.urls]
